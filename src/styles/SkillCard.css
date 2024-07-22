@@ -1,0 +1,60 @@
+.myskills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: calc(60% - 40px);
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex: 1;
+    /* Allow the .status division to grow or shrink */
+    /* max-width: calc(60% - 40px); */
+    /* Set a maximum width to make room for the skill cards */
+    padding: 10px 10px;
+    /* Adjust the padding as needed */
+}
+
+/* .grid-skill {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 250px;
+    grid-auto-flow: dense;
+} */
+
+.skill-card {
+    position: relative;
+    flex: 1 1 150px;
+    max-width: 300px;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    background-color: rgb(220, 220, 252);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card ul {
+    column-count: 1;
+    column-gap: 30px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.skill-card li {
+    list-style-type: circle;
+    font-size: 14px;
+}
+
+.skill-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
