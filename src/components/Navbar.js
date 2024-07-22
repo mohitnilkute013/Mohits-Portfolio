@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/Navbar.css';
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar ${isOpen ? 'h-resp' : ''}`}>
-      <a class="nav-left" href="#Home"><img src="assets/images/avtars/logo.png" alt="logo"></img><span>Mohit's New Portfolio</span></a>
+      <a className='nav-left' href='#Home'><img src={logo} alt='logo'></img><span>Mohit's Portfolio</span></a>
       <div className={`ham-show ${isOpen ? 'visible-resp' : ''}`}>
         <a href="#Home">Home</a>
         <a href="#About">About Me</a>

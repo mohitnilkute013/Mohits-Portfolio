@@ -33,7 +33,7 @@ import SkillCard from './components/SkillCard';
 import Timeline from './components/Timeline';
 import Flashcard from './components/Flashcard';
 import ScrollLink from './components/ScrollLink';
-// import './styles/App.css';
+import './styles/App.css';
 
 const App = () => {
   const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'ef ', ' wref', 'wefr', 'werfwef', 'ef ', ' wref', 'wefr', 'werfwef'];

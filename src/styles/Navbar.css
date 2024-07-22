@@ -1,71 +1,89 @@
 .navbar {
-    position: sticky;
-    top: 0;
-    background-color: rgb(58, 58, 59);
-    z-index: 999;
-    /* Add a high z-index value to make sure the navbar appears above other elements */
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  background-color: rgb(58, 58, 59);
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
 }
 
 .navbar a:hover {
-    color: rgb(75, 75, 243); /* rgb(98, 98, 234); */
+  color: rgb(75, 75, 243);
 }
-  
-  .nav-left {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
-  }
-  
-  .nav-left img {
-    height: 40px; /* Adjust based on your preference */
-    margin: 0 30px;
-    border-radius: 5px;
-  }
-  
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.nav-left img {
+  height: 40px;
+  margin: 0 30px;
+  border-radius: 5px;
+}
+
+.hamburger-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.hamburger-icon div {
+  width: 100%;
+  height: 5px;
+  background-color: black;
+  margin: 2px 0;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+/* Additional styles for the rotated lines */
+.line1-rotate {
+  transform: rotate(45deg) translate(7px, 5px);
+}
+
+.line2-viz {
+  opacity: 0;
+}
+
+.line3-rotate {
+  transform: rotate(-45deg) translate(7px, -5px);
+}
+
+/* Default styles for larger screens */
+.ham-show {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.ham-show a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
   .hamburger-icon {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-  }
-  
-  .hamburger-icon div {
-    width: 100%;
-    height: 5px;
-    background-color: black;
-    margin: 2px 0;
-    transition: all 0.3s ease;
-    border-radius: 5px;
+    display: flex;
   }
 
-  /* Additional styles for the rotated lines */
-  .line1-rotate {
-    transform: rotate(45deg) translate(7px, 5px);
-  }
-  
-  .line2-viz {
-    opacity: 0;
-  }
-  
-  .line3-rotate {
-    transform: rotate(-45deg) translate(7px, -5px);
-  }
-  
   .ham-show {
     display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
     transition: max-height 0.8s ease-out, opacity 0.8s ease-out;
     overflow: hidden;
     max-height: 0;
@@ -73,47 +91,8 @@
   }
 
   .ham-show.visible-resp {
-    max-height: 500px; /* Set this to a value greater than the total height of the links */
+    max-height: 500px;
     opacity: 1;
-}
-  
-  .ham-show a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
   }
-  
-  /* .ham-show a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-  } */
-  
-  /* Responsive styling for hamburger icon */
-@media (max-width: 768px) {
-    .hamburger-icon {
-        display: flex;
-    }
 
-    .ham-show {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-    }
-
-    .ham-show.visible-resp {
-        max-height: 500px;
-        opacity: 1;
-    }
-
-    .nav-left {
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    /* .navbar.h-resp {
-        flex-direction: column;
-        align-items: flex-start;
-    } */
 }
-
-  
