@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar ${isOpen ? 'h-resp' : ''}`}>
-      <a class="nav-left" href="#Home"><img src="assets/images/avtars/logo.png" alt="logo"></img><span>Mohit's Portfolio</span></a>
+      <a class="nav-left" href="#Home"><img src="assets/images/avtars/logo.png" alt="logo"></img><span>Mohit's New Portfolio</span></a>
       <div className={`ham-show ${isOpen ? 'visible-resp' : ''}`}>
         <a href="#Home">Home</a>
         <a href="#About">About Me</a>
