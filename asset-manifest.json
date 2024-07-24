@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/Mohits-Portfolio/static/css/main.4b5744a2.css",
-    "main.js": "/Mohits-Portfolio/static/js/main.898247a1.js",
+    "main.css": "/Mohits-Portfolio/static/css/main.92748a8b.css",
+    "main.js": "/Mohits-Portfolio/static/js/main.2e895b4a.js",
     "static/js/453.10f06fe9.chunk.js": "/Mohits-Portfolio/static/js/453.10f06fe9.chunk.js",
+    "static/media/dev.png": "/Mohits-Portfolio/static/media/dev.6bee84e3323f18653849.png",
+    "static/media/study-image.png": "/Mohits-Portfolio/static/media/study-image.dd867e779b0718be7b8d.png",
     "static/media/logo.png": "/Mohits-Portfolio/static/media/logo.902746f9b4f1f484e730.png",
+    "static/media/GitHub.svg": "/Mohits-Portfolio/static/media/GitHub.e3d6736386ffe039a7188a4eff1bd789.svg",
+    "static/media/Mail.svg": "/Mohits-Portfolio/static/media/Mail.b9d401430ac54f31c5a524f06d4df5fc.svg",
     "index.html": "/Mohits-Portfolio/index.html",
-    "main.4b5744a2.css.map": "/Mohits-Portfolio/static/css/main.4b5744a2.css.map",
-    "main.898247a1.js.map": "/Mohits-Portfolio/static/js/main.898247a1.js.map",
+    "static/media/LinkedIn.svg": "/Mohits-Portfolio/static/media/LinkedIn.d34eaf5b05820b7c5333553b208e4451.svg",
+    "main.92748a8b.css.map": "/Mohits-Portfolio/static/css/main.92748a8b.css.map",
+    "main.2e895b4a.js.map": "/Mohits-Portfolio/static/js/main.2e895b4a.js.map",
     "453.10f06fe9.chunk.js.map": "/Mohits-Portfolio/static/js/453.10f06fe9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b5744a2.css",
-    "static/js/main.898247a1.js"
+    "static/css/main.92748a8b.css",
+    "static/js/main.2e895b4a.js"
   ]
 }
