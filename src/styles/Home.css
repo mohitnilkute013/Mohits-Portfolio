@@ -1,0 +1,62 @@
+/* Now Home Section */
+#Home {
+    display: flex;
+    padding: 60px 10%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.leftSection {
+    font-size: 3rem;
+    width: fit-content;
+    /* Set a fixed width for the leftSection */
+    /* overflow: hidden; */
+    /* Hide any overflow caused by longer text */
+}
+
+.leftSection .low {
+    display: flex;
+    font-size: 15px;
+}
+
+.leftSection .logo-links{
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+}
+
+.leftSection .logo-links img{
+    margin-right: 35px;
+}
+
+.mohit-image{
+    width: 40%;
+}
+
+.text-purple {
+    color: rgb(75, 75, 243);   /*rgb(116, 16, 210);*/
+}
+
+
+@media only screen and (max-width: 1175px) {
+
+    #Home {
+        flex-direction: column-reverse;
+        padding: 0 0;
+    }
+
+    .leftSection {
+        font-size: 2rem;
+    }
+
+    .leftSection .logo-links {
+        margin-top: 0px;
+    }
+
+    .mohit-image{
+        width: 80%;
+        margin-bottom: 50px;
+    }
+
+}

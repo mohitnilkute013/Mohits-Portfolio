@@ -1,0 +1,55 @@
+/* src/ToggleSwitch.css */
+.toggle-switch {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .toggle-switch input {
+    display: none;
+  }
+  
+  .toggle-switch label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .slider {
+    width: 34px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 50px;
+    position: relative;
+    transition: background-color 0.2s;
+  }
+  
+  .slider::before {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: white;
+    top: 3px;
+    left: 3px;
+    transition: transform 0.2s;
+  }
+  
+  input:checked + label .slider {
+    background-color: #2196F3;
+  }
+  
+  input:checked + label .slider::before {
+    transform: translateX(14px);
+  }
+  
+  /* Dark mode styles */
+  body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  

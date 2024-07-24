@@ -1,0 +1,42 @@
+/* Now Education Section */
+#education {
+    padding: 20px 0;
+}
+
+.edu {
+    padding: 40px 140px;
+    display: flex;
+}
+
+.edu .desc {
+    margin: 0 100px;
+    list-style: none;
+}
+
+.edu .desc li {
+    list-style: none;
+    padding: 15px 0;
+}
+
+.study-image img {
+    width: 450px;
+    padding-top: 40px;
+}
+
+
+@media only screen and (max-width: 1175px) {
+
+    /* For Education Section */
+    .edu {
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 10px 0;
+    }
+    .edu .desc{
+        margin: 30px 15%;
+    }
+    .study-image img {
+        width: 100%;
+    }
+
+}

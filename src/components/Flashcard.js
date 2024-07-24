@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-// import './Flashcard.css';
+import '../styles/Flashcard.css';
 
-const Flashcard = ({ content }) => {
+const Flashcard = ({ title, description, links }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -10,11 +10,19 @@ const Flashcard = ({ content }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <ul style={{ maxHeight: isHovered ? '1000px' : '0px', visibility: isHovered ? 'visible' : 'hidden', opacity: isHovered ? '1' : '0' }}>
-        {content.map((item, index) => (
+      <h2>{title}</h2>
+      <ul style={{ maxHeight: isHovered ? '1000px' : '0px', visibility: isHovered ? 'visible' : 'hidden', opacity: isHovered ? '1' : '0' }}> {/*className={`${isHovered ? 'flash-ul-resp': ''}`}*/}
+        {description.map((item, index) => (
           <li key={index}>{item}</li>
         ))}
       </ul>
+      <div className="buttons">
+        {links.map((link, index) => (
+          <button key={index} className="btn">
+            <a href={link.url}>{link.text}</a>
+          </button>
+        ))}
+      </div>
     </div>
   );
 };

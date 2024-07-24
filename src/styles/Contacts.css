@@ -1,0 +1,17 @@
+/* Now Contact Me Section */
+#contacts {
+    padding-top: 20px;
+    text-align: center;
+}
+
+#contacts img {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 3px;
+    justify-content: center;
+    align-items: center;
+}
+
+#contacts p {
+    margin: 0;
+}

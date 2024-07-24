@@ -1,0 +1,22 @@
+/* Now Services Section */
+#services {
+    padding: 20px;
+    justify-content: center;
+    background-color: rgb(238, 238, 255);
+}
+
+.grid-service {
+    display: flex;
+    justify-content: space-evenly;
+    /* margin: 0 20%; */
+    padding: 30px 0;
+}
+
+.grid-service .skill-card h4 {
+    text-align: center;
+}
+
+.grid-service .skill-card ul {
+    list-style: none;
+    text-align: justify;
+}
