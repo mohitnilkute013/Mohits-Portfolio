@@ -7,8 +7,10 @@ const TypingEffect = () => {
     const options = {
       strings: ['Data Scientist', 'Web Developer', 'Data Analyst'],
       typeSpeed: 150,
+      backSpeed: 150,
       backDelay: 600,
       loop: true,
+      showCursor: true,
     };
 
     const typed = new Typed('#element', options);

@@ -23,12 +23,12 @@ const ToggleSwitch = () => {
 
   return (
     <div className="toggle-switch" onClick={handleToggle}>
-      <input
+      {/* <input
         type="checkbox"
         id="checkbox"
         checked={isDarkMode}
         readOnly
-      />
+      /> */}
       <label htmlFor="checkbox">
         <span className="slider"></span>
       </label>

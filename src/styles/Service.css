@@ -20,3 +20,19 @@
     list-style: none;
     text-align: justify;
 }
+
+
+
+@media only screen and (max-width: 1175px) {
+
+    /* For Service Section */
+    .grid-service{
+        flex-direction: column;
+    }
+
+    .grid-service .skill-card{
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+    
+}

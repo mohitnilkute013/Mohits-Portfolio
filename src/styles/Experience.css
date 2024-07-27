@@ -110,3 +110,30 @@
     }
 
 }
+
+@media only screen and (max-width: 650px) {
+    .center-container {
+        width: 70%;
+        padding-left: 0px;
+        flex-direction: column;
+    }
+
+    .timeline-points {
+        position: static; /* Change to static positioning */
+        width: 100%; /* Full width for column layout */
+        border-right: none; /* Remove the vertical line */
+        padding-right: 0; /* Remove padding */
+        text-align: center;
+    }
+
+    #descriptions {
+        display: block; /* Change to block display */
+        margin-top: 20px; /* Add some margin between points and descriptions */
+    }
+
+    .description {
+        width: 100%;
+        margin: 10px 0;
+        padding-left: 0; /* Remove left padding */
+    }
+}

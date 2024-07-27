@@ -10,6 +10,7 @@ import Services from './sections/Services';
 import Contacts from './sections/Contacts';
 import ToggleSwitch from './components/ToggleSwitch';
 import './styles/App.css';
+import ToggleSwitch2 from './components/ToggleSwitch2';
 
 const App = () => {
   // const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'ef ', ' wref', 'wefr', 'werfwef', 'ef ', ' wref', 'wefr', 'werfwef'];
@@ -30,6 +31,7 @@ const App = () => {
 
       <Contacts/>
       <ToggleSwitch/>
+      {/* <ToggleSwitch2/> */}
       <footer>
         <p>&copy; 2023 All Rights Reserved<br/>Designed and Developed by Mohit Nilkute</p>
       </footer>
